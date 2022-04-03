@@ -23,13 +23,13 @@ class Product extends StatelessWidget {
           Stack(
             children: [
               Container(
-                color: HexColor("#fafafa"),
-                height: 200,
-                child: Image.network(
-                  'https://thumbs.dreamstime.com/b/positive-man-enjoying-shopping-happy-man-shopping-bags-isolated-white-excited-happy-man-doing-online-shopping-thanks-150853335.jpg',
-                  fit: BoxFit.fitHeight,
-                ),
-              ),
+                  color: HexColor("#fafafa"),
+                  height: 200,
+                  width: (MediaQuery.of(context).size.width / 3) - 2,
+                  child: FittedBox(
+                    child: Image.asset('assets/shopping.jpeg'),
+                    fit: BoxFit.fill,
+                  )),
               Positioned(
                 right: 5,
                 top: 5,

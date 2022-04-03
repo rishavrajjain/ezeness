@@ -28,8 +28,7 @@ class TitleCategories extends StatelessWidget {
                 ),
                 image: const DecorationImage(
                     fit: BoxFit.fill,
-                    image: NetworkImage(
-                        "https://pbs.twimg.com/profile_images/916384996092448768/PF1TSFOE_400x400.jpg")),
+                    image: AssetImage('assets/ranveer.jpeg')),
               ),
               margin: const EdgeInsets.symmetric(horizontal: 8.0),
             ),

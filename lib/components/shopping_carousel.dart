@@ -20,11 +20,9 @@ class ShoppingCarousel extends StatelessWidget {
                 decoration: const BoxDecoration(
                   image: DecorationImage(
                     fit: BoxFit.cover,
-                    image: NetworkImage(
-                        "https://blog.tours4fun.com/wp-content/uploads/2020/01/fjord-hero-Flam-village-1230x600.jpg"),
-                  ),
+                    image: AssetImage('assets/denmark.jpeg')
                 ),
-              ),
+              ),),
               Padding(
                 padding: const EdgeInsets.only(top: 160.0),
                 child: Container(
